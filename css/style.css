@@ -1,0 +1,131 @@
+/* General Body Styles */
+body {
+    background-image: url('memebackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    box-sizing: border-box;
+    max-height: 100vh;
+    padding: 20px;
+}
+
+a {
+    color: #ffffff;
+}
+
+/* Logo */
+.logo {
+    max-width: 200px;
+    margin-bottom: 30px;
+    animation: rotateLogo 20s linear infinite;
+    /* Example of simple animation */
+}
+
+/* Title */
+.title {
+    font-size: 28px;
+    /* Slightly larger font size */
+    color: #ffffff;
+    /* Darker shade for better readability */
+    font-weight: 700;
+    /* Medium weight for the title */
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+
+/* Subtitle */
+.subtitle {
+    font-size: 18px;
+    /* Slightly larger font size */
+    color: #ffffff;
+    /* Darker shade for better readability */
+    font-weight: 600;
+    /* Medium weight for the title */
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+/* Input Field */
+.input-field {
+    width: 100%;
+    /* Responsive width */
+    max-width: 300px;
+    /* Maximum width */
+    padding: 8px 15px;
+    border: 2px solid #ffffff;
+    /* Slightly thicker border with primary color */
+    border-radius: 5px;
+    /* Rounded corners */
+    margin-bottom: 20px;
+    font-size: 16px;
+    /* Larger font size for better readability */
+}
+
+/* Submit Button */
+.submit-button {
+    width: 150px;
+    /* Slightly wider button */
+    padding: 10px 15px;
+    background-color: #ffffff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    /* Larger font size */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.submit-button:hover {
+    background-color: #ffffff;
+    /* Darker shade on hover */
+}
+
+/* Result */
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    /*background-color: #fafafa; */
+    /* Light background for the result box */
+    width: 100%;
+    max-width: 500px;
+    /* To match the input field */
+    text-align: center;
+}
+
+/* Simple Animation Example */
+@keyframes rotateLogo {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .title {
+        font-size: 24px;
+        /* Adjust font size for smaller devices */
+    }
+
+    .submit-button,
+    .input-field {
+        width: 90%;
+        /* More responsive on small devices */
+    }
+}
